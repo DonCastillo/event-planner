@@ -1,5 +1,6 @@
 import React from 'react';
 import './EventPlanner.css'; // Import CSS file for styling
+import Footer from './Footer';
 
 const EventPlanner = () => {
     return (
@@ -77,8 +78,20 @@ const EventPlanner = () => {
                     <p className="author">Melissa R., Birthday Celebration Client</p>
                 </div>
             </section>
-            <section className="contact"></section>
+            <section className="contact">
+                <h2>Contact</h2>
+                <form>
+                    <input type="text" placeholder="Name" />
+                    <input type="email" placeholder="Email" />
+                    <textarea placeholder="Message"></textarea>
+                    <button className="submit-button">Send</button>
+                </form>
+            </section>
+            <div className="event-planner-container">
+                <Footer />
+            </div>
         </div>
+
     );
 };
 
